@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIEFLIX</title>
+                     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+                     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                     <!-- Custom JS -->
+    <script src="script.js"></script>
+    <link rel="icon" href="./IMAGES/M.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <!-- Loader -->
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Film.html"><img src="./IMAGES/MOVIEFLIX.png" alt="Logo" class="LOGO" width="100"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Film.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tv-shows">TV Shows</a></li>
+                    <li class="nav-item"><a class="nav-link" href=".//Components/Movies/Movies.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#new-popular">New & Popular</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#my-list">My List</a></li>
+                    <!-- Sign In Button -->
+                    <li class="nav-item">
+                        <a href="./Components/Sign_in/sign-in.html" class="btn btn-outline-danger ms-2">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <div class="hero-section position-relative">
+        <img src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABS6v2gvwesuRN6c28ZykPq_fpmnQCJwELBU-kAmEcuC9HhWX-DfuDbtA-bfo-IrfgNtxl0qwJJlhI6DENsGFXknKkjhxPGTV-qhp.jpg?r=608" class="img-fluid w-100" alt="Stranger Things">
+        <div class="overlay"></div>
+        <div class="hero-content text-white">
+            <h1>Stranger Things</h1>
+            <p>#1 in TV Shows Today</p>
+            <a href="#" class="btn btn-danger btn-lg">Play</a>
+            <a href="#" class="btn btn-secondary btn-lg">My List</a>
+        </div>
+    </div>
+
+               
+    <!-- Top Picks For You -->
+    <section class="py-5">
+        <div class="container">
+            <h2>Top Picks For You</h2>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZGM4MzY3NzYtYjViZS00MmE4LTgxZmMtNTZkNDM5MDIwMDg1XkEyXkFqcGc@._V1_.jpg" 
+                         alt="Supergirl" 
+                         class="img-fluid rounded movie-poster" 
+                         data-movie="Supergirl"> 
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjg5MTM4N2QtN2RlMS00NzBlLTg3NDktM2ExZDNmMmExMGU3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Extraction 2" class="img-fluid rounded movie-poster">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/I/71GQkYL3AWL._AC_UF1000,1000_QL80_.jpg" alt="The 100" class="img-fluid rounded movie-poster">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMDEwOWVlY2EtMWI0ZC00OWVmLWJmZGItYTk3YjYzN2Y0YmFkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="The Witcher" class="img-fluid rounded movie-poster">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZGEwYmMwZmMtMTQ3MS00YWNhLWEwMmQtZTU5YTIwZmJjZGQ0XkEyXkFqcGdeQXVyMTI5MzA5MjA1._V1_FMjpg_UX1000_.jpg" alt="Wanda Vision" class="img-fluid rounded movie-poster">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg" alt="The Dark Knight" class="img-fluid rounded movie-poster">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMGFlMzI0YmEtZDEzNy00NWY1LTgzNDEtMTg2MzQ4OWFlNmNjXkEyXkFqcGdeQXVyMjg1NDcxNDE@._V1_.jpg" alt="The Rings of Power" class="img-fluid rounded movie-poster">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOTUwODI0ODE3OF5BMl5BanBnXkFtZTcwNjQ3NTM0OA@@._V1_.jpg" alt="The Walking Dead" class="img-fluid rounded movie-poster">
+                </div>  
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH3apVAChDoOdWfhfYpyXV6GLqnRIosZzKvg&s" alt="The wolf of wall street" class="img-fluid rounded movie-poster">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOTFmNDA3ZjMtN2Y0MC00NDYyLWFlY2UtNTQ4OTQxMmY1NmVjXkEyXkFqcGdeQXVyNTg4NDQ4NDY@._V1_FMjpg_UX1000_.jpg" alt="Mission impossible" class="img-fluid rounded movie-poster">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYTg1NDRkNzktM2YwOS00ZGE2LWI5MWEtNmM2YjIyMTgzMDFmXkEyXkFqcGc@._V1_.jpg" alt="john wick 2" class="img-fluid rounded movie-poster">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <img src="https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" alt="Game of Thrones" class="img-fluid rounded movie-poster">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 MOVIEFLIX | Designed by SESAME STUDENTS</p>
+    </footer>
+</body>
+</html>
