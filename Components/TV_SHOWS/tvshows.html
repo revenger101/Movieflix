@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIEFLIX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="tvshows.css">
+    <link rel="icon" href="../../IMAGES/M.png" type="image/png">
+    
+</head>
+
+
+
+<body>
+<!-- Loader -->
+<div id="loader">
+    <div class="spinner"></div>
+</div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../Film.html"><img src="../../IMAGES/MOVIEFLIX.png" alt="Logo" class="LOGO" width="100"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../Film.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../TV_SHOWS/tvshows.html">TV Shows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Movies/Movies.html">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#new-popular">New & Popular</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#my-list">My List</a></li>
+                    <li class="nav-item">
+                        <a href="../Sign_in/sign-in.html" class="btn btn-outline-danger ms-2">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Movie Section -->
+    <section class="py-5">
+        <div class="container">
+            
+            <div class="row">
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="movie-card" data-bs-toggle="modal" data-bs-target="#movieModal1">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZGM4MzY3NzYtYjViZS00MmE4LTgxZmMtNTZkNDM5MDIwMDg1XkEyXkFqcGc@._V1_.jpg" 
+                             alt="Supergirl" 
+                             class="img-fluid movie-poster">
+                        <h5 class="movie-title">Supergirl</h5>
+                        <p class="movie-desc">A superheroine fights for justice while hiding her true identity.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="movie-card" data-bs-toggle="modal" data-bs-target="#movieModal2">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOGY3NTg1ODMtOGIzZS00YWFiLTgzYzktNzBiYWZkYjcwNGRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" 
+                             alt="Game of thrones" 
+                             class="img-fluid movie-poster">
+                        <h5 class="movie-title">Game of thrones</h5>
+                        <p class="movie-desc">Created by David Benioff, D.B. Weiss. With Peter Dinklage, Lena Headey, Kit Harington, Emilia Clarke</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="movie-card" data-bs-toggle="modal" data-bs-target="#movieModal3">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDdmZGYwOWEtN2FkZC00Y2ExLWJkY2UtNzFlODVlNzc3MGIzXkEyXkFqcGc@._V1_QL75_UY281_CR6,0,190,281_.jpg" 
+                             alt="The 100" 
+                             class="img-fluid movie-poster">
+                        <h5 class="movie-title">The 100</h5>
+                        <p class="movie-desc">Created by Jason Rothenberg. With Eliza Taylor, Marie Avgeropoulos, Bob Morley, Lindsey Morgan.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="movie-card" data-bs-toggle="modal" data-bs-target="#movieModal4">
+                        <img src="https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQXkZT-lO3jb56JLr8y_nVCvUvoYM6HZueFReJcMJ_n9iYs2dpooRFW1a13VZ9oW000wofS66kLv2Bf0Yf5WuLgMjSlNLSDOi3k2qBUcHd3VfO2aWh_3NtqW78tEt5cQIEzBJxdS92hTn8wYiGjXII6Uk.jpg?r=45b" 
+                             alt="Elite" 
+                             class="img-fluid movie-poster">
+                        <h5 class="movie-title">Elite</h5>
+                        <p class="movie-desc">Created by Darío Madrona, Carlos Montero. With Omar Ayuso, Itzan Escamilla, Miguel Bernardeau</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="movie-card" data-bs-toggle="modal" data-bs-target="#movieModal5">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTktMDZkMy00NDU1LWIxM2UtODg5OGFiNmRhNDBjXkEyXkFqcGc@._V1_.jpg" 
+                             alt="The Witcher" 
+                             class="img-fluid movie-poster">
+                        <h5 class="movie-title">The Witcher</h5>
+                        <p class="movie-desc">Geralt of Rivia a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="movie-card" data-bs-toggle="modal" data-bs-target="#movieModal6">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYzc3YzY0MjYtNDY3OC00OWY4LTllZWQtNjljYzNjNGJlMmIyXkEyXkFqcGc@._V1_.jpg" 
+                             alt="Rings of Power" 
+                             class="img-fluid movie-poster">
+                        <h5 class="movie-title">Rings of Power</h5>
+                        <p class="movie-desc">The Rings of Power: Created by Patrick McKay, John D. Payne. With Morfydd Clark</p>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Movie 1 -->
+    <div class="modal fade" id="movieModal1" tabindex="-1" aria-labelledby="movieModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="movieModal1Label">Supergirl Trailer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/49RZx5tUKM4" 
+                    title="Supergirl Trailer"  
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen autoplay>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="movieModal2" tabindex="-1" aria-labelledby="movieModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="movieModal1Label">Game of thrones</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe width="100%" height="400px" src="https://www.youtube.com/embed/KPLWWIOCOOQ" title="Game of Thrones | Official Series Trailer (HBO)"  
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen autoplay>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="movieModal3" tabindex="-1" aria-labelledby="movieModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="movieModal1Label">The 100</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ia1Fbg96vL0" title="The 100 Trailer"  
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen autoplay>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>      
+
+      <div class="modal fade" id="movieModal4" tabindex="-1" aria-labelledby="movieModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="movieModal1Label">Elite</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe width="100%" height="400px" src="https://www.youtube.com/embed/QNwhAdrdwp0" title="Elite | Official Trailer | Netflix"  
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen autoplay>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="movieModal5" tabindex="-1" aria-labelledby="movieModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="movieModal1Label">The Witcher</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe width="100%" height="400px" src="https://www.youtube.com/embed/cSqi-8kAMmM" title="The Witcher | Official Teaser | Netflix"  
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen autoplay>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="movieModal6" tabindex="-1" aria-labelledby="movieModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="movieModal1Label">Rings of Power</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe width="100%" height="400px" src="https://www.youtube.com/embed/TCwmXY_f-e0" title="The Lord of The Rings: The Rings of Power - Official Teaser Trailer | Prime Video"  
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen autoplay>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 MOVIEFLIX | Designed by SESAME STUDENTS</p>
+    </footer>
+    
+    <script src="tvshows.js"></script>
+</body>
+</html>

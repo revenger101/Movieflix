@@ -1,0 +1,213 @@
+body {
+    background-color: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .navbar {
+    background-color: #141414; /* Start with solid color */
+    position: fixed; /* Make the navbar fixed to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+    transition: background-color 0.5s ease; /* Smooth transition */
+    padding: 10px 20px; /* Optional padding for better look */
+  }
+  
+  /* When the user scrolls, apply this class to make the navbar transparent */
+  .navbar.transparent {
+    background-color: transparent; /* Become transparent */
+  }
+  
+  /* Navbar links */
+  .nav-link {
+    color: white;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    color: red;
+  }
+  
+  
+  /* Navbar turns solid when scrolling */
+  .navbar.scrolled {
+    background-color: #141414 !important; /* Dark background on scroll */
+  }
+  
+  /* Carousel styles */
+  .carousel-caption {
+    bottom: 40%;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 4rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+  
+  .carousel-item img {
+    filter: brightness(0.5);
+  }
+  
+  .movie-box {
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .movie-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .movie-desc {
+    font-size: 0.9rem;
+    color: #b5b5b5;
+  }
+  
+  /* Optional: Hover effect for movie boxes */
+  .movie-box:hover .movie-poster {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+  
+  /* Modal background */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000; /* Ensure it's above other content */
+    display: none; /* Hidden by default */
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #333; /* Light black content area */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px; /* Make the modal wider */
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+  @media (max-width: 768px) {
+    .modal-content {
+        max-width: 90%; /* Adjust modal width for smaller screens */
+    }
+  }
+  
+  .movie-card {
+    border: 1px solid #3d3d3d; /* Adds border like in the image */
+    border-radius: 8px;
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .movie-poster {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .movie-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+  
+  .movie-desc {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 0.5rem 0;
+  }
+  
+  .row {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin-top: 100px;
+    position: fixed;
+  }
+  
+  /* Loader Styles */
+  #loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Keep the loader on top */
+  }
+  
+  /* Spinner animation */
+  .spinner {
+    border: 10px solid #f3f3f3;  /* Light grey border */
+    border-top: 10px solid red; /* Blue border */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Keyframes for spinning effect */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Hides loader after the page has loaded */
+  body.loaded #loader {
+    display: none;
+  }
+  
+  
+  
+  
