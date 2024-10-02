@@ -13,8 +13,8 @@ window.addEventListener('scroll', function() {
     document.querySelectorAll('.movie-poster').forEach(poster => {
         poster.addEventListener('click', function() {
             const movie = this.getAttribute('data-movie');
-            document.querySelector('.modal h2').innerText = movie; // Set movie title
-            document.querySelector('.modal').style.display = 'flex'; // Show modal
+            document.querySelector('.modal h2').innerText = movie; 
+            document.querySelector('.modal').style.display = 'flex';
         });
     });
 
@@ -32,8 +32,7 @@ window.addEventListener('scroll', function() {
 
 // Ensure the DOM and all resources are fully loaded before hiding the loader
 window.addEventListener('load', function() {
-  console.log("Page fully loaded"); // To check if the event is firing correctly
-  // Add the 'loaded' class to the body to hide the loader
+  console.log("Page fully loaded"); 
   document.body.classList.add('loaded');
 });
 
